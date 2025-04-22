@@ -20,7 +20,7 @@ db = client_mongo["passme"]
 flight_collection = db["flights"]
 
 # Whisper model
-model = whisper.load_model("base")
+model = whisper.load_model("small")
 
 @app.route("/chat-ai", methods=["POST"])
 def handle_chat():
